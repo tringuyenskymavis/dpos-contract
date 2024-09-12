@@ -36,7 +36,7 @@ jobs:
         with:
           version: nightly-2b1f8d6dd90f9790faf0528e05e60e573a7569ce
 
-      - name: Install package with soldeer
+      - name: Update package with soldeer
         run: forge soldeer install
 
       - name: Recursively update dependencies
@@ -48,7 +48,7 @@ jobs:
       - name: Run Forge build
         run: |
           forge --version
-          forge build
+          forge build --skip scripts
         id: build
 
       - name: Run Forge tests

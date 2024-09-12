@@ -35,7 +35,6 @@ contract MaintenanceTest is Test {
     LibPrecompile.deployPrecompile();
     dposDeployHelper.cheatSetUpValidators();
 
-
     profile = Profile(config.getAddressFromCurrentNetwork(Contract.Profile.key()));
     staking = Staking(config.getAddressFromCurrentNetwork(Contract.Staking.key()));
     maintenance = Maintenance(config.getAddressFromCurrentNetwork(Contract.Maintenance.key()));

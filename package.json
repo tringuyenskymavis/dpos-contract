@@ -27,7 +27,9 @@
     "hardhat.config.{js,ts}": "prettier --write"
   },
   "dependencies": {
-    "@openzeppelin/contracts": "4.7.3"
+    "@openzeppelin/contracts": "4.7.3",
+    "axios": "^1.7.7",
+    "csv-parser": "^3.0.0"
   },
   "devDependencies": {
     "@bahuy3103/hardhat-contract-sizer": "2.10.3",
